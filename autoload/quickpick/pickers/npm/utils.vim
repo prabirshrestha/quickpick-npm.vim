@@ -6,7 +6,7 @@ function! quickpick#pickers#npm#utils#filter(items, searchterm) abort
 endfunction
 
 function! quickpick#pickers#npm#utils#search(searchterm, callback) abort
-    if empty(trim(a:searchterm))
+    if empty(a:searchterm)
         call a:callback([])
         return
     endif
